@@ -3,6 +3,7 @@
   --aboutTitleTextColor: #500b97;
   --mainTextColor: #5b0e88;
   --mainBackgroundColor: #000000;
+  --buttonColor: #4b00ad;
 }
 
 html,
@@ -66,4 +67,12 @@ section {
 
 .nav-box {
   background-color: var(--mainBackgroundColor);
+}
+
+.button {
+  display: inline;
+  border-radius: 1rem;
+  color: white;
+  padding: 8.5px;
+  background-color: var(--buttonColor);
 }
