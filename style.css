@@ -45,7 +45,7 @@ textarea {
 
 section {
   padding: 10px;
-  margin: auto;
+  min-height: 30vh;
 }
 
 .home-title {
@@ -56,6 +56,7 @@ section {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
+  margin-top: 10vh;
 }
 
 .home_social-icon {
@@ -69,6 +70,7 @@ section {
 
 .home-blob-img{
   width: fit-content;
+  height: fit-content;
 }
 
 .text-title {
@@ -82,12 +84,12 @@ section {
 .img-blob {
   justify-content: center;
   align-items: center;
-  width: 60%;
+  max-width: 80%;
 }
 
 .nav-box {
   background-color: var(--mainBackgroundColor);
-  margin: auto;
+  min-height: 30px;
 }
 
 .nav-button{
@@ -100,4 +102,10 @@ section {
   color: white;
   padding: 8.5px;
   background-color: var(--buttonColor);
+}
+
+.describe {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10vh;
 }
