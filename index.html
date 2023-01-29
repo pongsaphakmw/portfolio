@@ -16,18 +16,21 @@
     <!-- <header> -->
         <nav class="nav-bar navbar-expand-lg flex-column flex-md-row sticky-top">
             <div class="container-fluid nav-justified nav-box">
-                <ul class="navbar-nav">
-                    <li class="nav-item col">
+                <ul class="navbar-nav row">
+                    <li class="nav-item ">
                         <a href="#about" class="nav-button">Logo</a>
                     </li>
-                    <li class="nav-item col">
+                    <li class="nav-item">
                         <a href="#skills" class="nav-button">Skills</a>
                     </li>
-                    <li class="nav-item col">
-                        <a href="#work" class="nav-button">Work</a>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-button">Projects</a>
                     </li>
-                    <li class="nav-item col">
+                    <li class="nav-item">
                         <a href="#contact" class="nav-button">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" download="./CV/Resume.pdf" class="nav-button">Download CV</a>
                     </li>
                 </ul>
             </div>
@@ -46,12 +49,13 @@
                     </a>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="col-4">
                 <svg class="img-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#8e05c2"
                         d="M50.5,-26.3C63.1,-7.2,69.6,18.3,60.1,36.7C50.7,55.1,25.3,66.3,-1.7,67.3C-28.8,68.3,-57.6,59.1,-68.8,39.6C-80.1,20.2,-73.8,-9.4,-59.4,-29.5C-45.1,-49.6,-22.5,-60.3,-1.8,-59.2C18.9,-58.2,37.8,-45.5,50.5,-26.3Z"
                         transform="translate(100 100)" />
-                    <image class="home-blob-img" href="img/my_img.jpg">
+                    <image class="home-blob-img" href="./img/my_img.jpg">
+                    
                 </svg>
             </div>
             <div class="col">
@@ -78,16 +82,110 @@
     </section>
     <section class="work" id="work">
         <div class="container-fluid">
-            <h1 class="home-title">Work</h1>
+            <h1 class="home-title">Projects</h1>
+            <ul class="row">
+                <li class="card col project">
+                    <h3 class="proj-title">DME Student Showcase</h3>
+                    <p class="proj-text">This is a project that i made for my university. This project is a website that show the student's work and their information. It's made by Django and Firebase</p>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./img/first_pg.png" class="d-block w-100 img-set" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/Register.png" class="d-block w-100 img-set" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./img/desktop_window_light.png" class="d-block w-100 img-set" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </li>
+                <li class="card col project">
+                    <h3 class="proj-title">Muse Music</h3>
+                    <p class="proj-text">This is a project that made for selling online course in mobile. This project made by Flutter and Firebase</p>
+                </li>
+                <li class="card col project">
+                    project3
+                </li>
+            </ul>
         </div>
     </section>
     <section class="contact" id="contact">
         <div class="container-fluid">
             <h1 class="home-title">Contact</h1>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <form action="" class="contact-form">
+                        <input type="text" class="contact-form-text" placeholder="Name">
+                        <input type="email" class="contact-form-text" placeholder="Email">
+                        <input type="text" class="contact-form-text w-100" placeholder="Subject">
+                        <textarea name="" id="" cols="73" rows="10" class="contact-form-text w-100" placeholder="Message"></textarea>
+                        <input type="submit" class="contact-form-btn button button--flex" value="Send">
+                    </form>
+                </div>
+                <div class="col-4">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-info-text">
+                                <h3 class="contact-info-title">Phone</h3>
+                                <span class="contact-info-subtitle">
+                                    <i class="uil uil-phone-alt contact-info-icon"></i>
+                                    +66 82 018 8619
+                                </span>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-text">
+                                <h3 class="contact-info-title">Email</h3>
+                                <span class="contact-info-subtitle">
+                                    <i class="uil uil-envelope contact-info-icon"></i>
+                                    tawanmw@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-text">
+                                <h3 class="contact-info-title">Location</h3>
+                                <span class="contact-info-subtitle">
+                                    <i class="uil uil-map-marker contact-info-icon"></i>
+                                    Bangkok, Thailand
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </body>
 <footer>
-
+    <div class="footer-content container">
+        <div class="made-with">Made with <i class="uil uil-heart"></i> by Pongsaphak Maneewong</div>
+        <ul class="socials">
+            <li>
+                <a href="" class="social">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social">
+                    <i class="uil uil-github"></i>
+                </a>
+        </ul>
 </footer>
 </html>

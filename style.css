@@ -4,6 +4,7 @@
   --mainTextColor: #5b0e88;
   --mainBackgroundColor: #000000;
   --buttonColor: #4b00ad;
+  --contactTextColor: #ffffff;
 }
 
 html,
@@ -50,17 +51,19 @@ section {
 
 .home-title {
   color: var(--homeTitleTextColor);
+  margin-bottom: 10px;
 }
 
 .home_social {
   display: grid;
   grid-template-columns: max-content;
   row-gap: 1rem;
-  margin-top: 10vh;
+  margin-top: 11vh;
+  
 }
 
 .home_social-icon {
-  font-size: 1.25rem;
+  font-size: 3rem;
   color: var(--aboutTitleTextColor);
 }
 
@@ -71,6 +74,7 @@ section {
 .home-blob-img{
   width: fit-content;
   height: fit-content;
+  align-items: center;
 }
 
 .text-title {
@@ -84,12 +88,12 @@ section {
 .img-blob {
   justify-content: center;
   align-items: center;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .nav-box {
   background-color: var(--mainBackgroundColor);
-  min-height: 30px;
+  min-height: 4vh;
 }
 
 .nav-button{
@@ -106,6 +110,54 @@ section {
 
 .describe {
   justify-content: space-between;
+  /* text-align: right; */
   align-items: center;
+  margin-top: 8vh;
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
   margin-top: 10vh;
+  margin-right: 25px;
+  max-width: 80%;
+  max-height: 100vh;
+  min-height: 30vh;
+}
+
+.proj-title {
+  color: var(--aboutTitleTextColor);
+  margin-top: 4px;
+}
+
+.proj-text {
+  color: var(--mainTextColor);
+  margin-top: .5rem;
+}
+
+.img-set {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin-right: 25px;
+  max-width: auto;
+  max-height: 100vh;
+  min-height: 30vh;
+}
+
+.contact-info-text {
+  color: var(--contactTextColor);
+}
+
+.contact-form-text {
+  color: var(--mainTextColor);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  
+}
+
+.footer-content {
+  color: var(--contactTextColor);
 }
